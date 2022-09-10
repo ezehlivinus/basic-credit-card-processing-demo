@@ -4,7 +4,7 @@
 I chose to use expressJS popular API design because it will be easy to understood by fellow developers.
 
 ## Choice of Language
-I chose JavaScript because that is a language that is closest to me and I have been using for a few months now.
+I chose JavaScript because it is a language that is closest to me and I have been using for a few months now.
 
 ## How to Run
 I used [node](https://nodejs.org/) version 18.x to run the program. Download and install it
@@ -54,5 +54,5 @@ To test the program, run the following command in the terminal:
 
 ```bash
 npm run test
-# You might need to use Ctrl+C to stop the program if it is running
+# You might need to use Ctrl+C to stop the program if it is still running after the test has been executed
 ```

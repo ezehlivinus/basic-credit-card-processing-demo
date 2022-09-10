@@ -6,11 +6,15 @@ const { assert } = chai;
 describe('fileReader', () => {
   beforeEach(() => {
     accounts.length = 0;
+    
   });
 
-  // after(() => {
-  //   process.exit(0)
-  // })
+  after(() => {
+    // exit the process after all tests are done in 5 seconds
+    setTimeout(() => {
+      process.exit();
+    }, 5000);
+  })
 
   it('should read file and return array of entries', async () => {
     const filename = './test/file.txt';

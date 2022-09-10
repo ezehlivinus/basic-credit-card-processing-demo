@@ -18,7 +18,3 @@ if (argv._.length) {
   console.info('Type "exit" or "quit" or hit the enter key twice to exit and show summary:\n');
   standardInput()
 }
-
-// console.log('Something usual happened...')
-// process.exit(0)
-
