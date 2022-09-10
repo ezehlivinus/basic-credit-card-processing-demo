@@ -1,10 +1,10 @@
 # Basic Credit Card Processing
 
 ## Overview
-I chose to use expressJS popular API design because it will be easy to understood by fellow developers.
+I chose to use ExpressJS's popular API design because it will be easy to understand by fellow developers.
 
 ## Choice of Language
-I chose JavaScript because it is a language that is closest to me and I have been using for a few months now.
+I chose JavaScript because it is a language that is closest to me and I have been using it for a few months now. With respect this program I did not see any reason to use another language.
 
 ## How to Run
 I used [node](https://nodejs.org/) version 18.x to run the program. Download and install it
