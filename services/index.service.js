@@ -1,6 +1,33 @@
 import { accounts } from '../index.js';
+import { isValidLuhn } from "../services/luhn.ten.service.js";
 
 class Service {
+  newInput (input) {
+    const txn = {
+      txnType: input[0],
+      accountName: input[1],
+      amount: input[2]
+      }
+  
+    if (input[0] === 'Charge') {
+      
+      this.charge(txn);
+    } else if (input[0] === 'Credit') {
+      this.credit(txn);
+    }else if (input[0] === 'Add') {
+      const account = {
+        name: input[1],
+        cardNumber: input[2],
+        limit: input[3]
+      }
+  
+      let balance = isValidLuhn(account.cardNumber) ? '$0' : 'error';
+      account.balance = balance;
+  
+      this.add({ ...account });
+    }
+  
+  }
   add({ name, cardNumber, balance, limit }, txn = null ) {
     if (!txn) {
       accounts.push({ name, cardNumber, balance, limit });

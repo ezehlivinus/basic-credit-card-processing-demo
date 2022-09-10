@@ -3,8 +3,8 @@ export const accounts = [];
 // import { dirname } from 'path';
 // import { fileURLToPath } from 'url';
 import { URL } from 'url'
-import { standardInput } from './services/stdin.service.js';
 import { handleFileReading } from './controllers/index.controller.js';
+import { standardInput } from './services/stdin.service.js';
 
 const argv = yargs(process.argv.slice(2)).argv;
 
